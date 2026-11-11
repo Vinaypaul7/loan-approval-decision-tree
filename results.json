@@ -1,0 +1,71 @@
+{
+  "depth_results": [
+    {
+      "max_depth": 1,
+      "train_accuracy": 0.825,
+      "test_accuracy": 0.825
+    },
+    {
+      "max_depth": 2,
+      "train_accuracy": 0.84375,
+      "test_accuracy": 0.7
+    },
+    {
+      "max_depth": 3,
+      "train_accuracy": 0.9125,
+      "test_accuracy": 0.775
+    },
+    {
+      "max_depth": 4,
+      "train_accuracy": 0.94375,
+      "test_accuracy": 0.775
+    },
+    {
+      "max_depth": 5,
+      "train_accuracy": 0.96875,
+      "test_accuracy": 0.775
+    },
+    {
+      "max_depth": 8,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.8
+    },
+    {
+      "max_depth": null,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.8
+    }
+  ],
+  "final_model": {
+    "max_depth": 3,
+    "accuracy": 0.775,
+    "confusion_matrix": [
+      [
+        16,
+        4
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "recall_rejected": 0.8,
+    "recall_approved": 0.75
+  },
+  "feature_importance": {
+    "credit_score": 0.7219,
+    "loan_amount": 0.2014,
+    "monthly_income": 0.0532,
+    "existing_emi": 0.0234
+  },
+  "sample_prediction": {
+    "applicant": {
+      "monthly_income": 80,
+      "credit_score": 740,
+      "loan_amount": 15,
+      "existing_emi": 8
+    },
+    "prediction": "Approved",
+    "confidence": 1.0
+  }
+}
